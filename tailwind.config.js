@@ -4,16 +4,33 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blew: {
-          DEFAULT: '#d6edf3',
-          darker: '#b8d4db'
-        }
+        soil: {
+          DEFAULT: '#534650',
+          darker: '#332b31'
+        },
+        coffee: {
+          DEFAULT: '#7C5D4A'
+        },
       },
       screens: {
         'nrw': { 'raw': '(max-aspect-ratio: 13/20)' }
       },
       fontFamily: {
         'julius': ['Julius Sans One', 'sans-serif']
+      },
+      keyframes: {
+        'open-menu': {
+          '0%': { transform: 'scaleY(0)' },
+          '100%': { transform: 'scaleY(1)' },
+        },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        }
+      },
+      animation: {
+        'open-menu': 'open-menu 0.4s ease-in-out forwards',
+        'fade-in': 'fade-in 1s ease-in-out forwards'
       }
     },
   },

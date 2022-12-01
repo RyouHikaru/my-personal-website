@@ -7,70 +7,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carl James M. Reblora | Software Developer</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script src="./js/main.js" defer></script>
 </head>
 
-<body class="min-h-screen flex flex-col justify-between font-julius">
+<body class="min-h-screen flex flex-col justify-between font-julius text-amber-50">
   <!-- Header -->
-  <header class="flex justify-between items-center bg-blew sticky top-0 py-2 px-5 text-slate-800 text-2xl shadow-sm sm:text-lg md:px-10">
-    <!-- Logo -->
-    <div class="w-24">
-      <a href="#hero"><img src="./img/logo-200x200.png" alt="logo"></a>
-    </div>
-    <!-- Navbar -->
-    <div>
-      <button id="menu-btn" class="sm:hidden">☰</button>
-      <nav class="hidden sm:flex gap-x-8">
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+  <header class="sticky z-10 bg-gradient-to-l from-soil to-coffee top-0 py-2 px-5 text-2xl shadow-sm sm:text-lg md:px-10">
+    <section class="flex flex-row justify-between">
+      <!-- Logo -->
+      <div>
+        <a href="#hero" class="font-bold hover:text-amber-300">
+          CJMR
+        </a>
+      </div>
+      <!-- Navbar -->
+      <div>
+        <button id="menu-btn" class="hover:text-amber-300 sm:hidden" type="button">☰</button>
+        <nav>
+          <ul class="hidden sm:flex gap-x-8">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    
+    <!-- Menu (Mobile) -->
+    <section id="nav-menu" class="hidden bg-gradient-to-l from-soil to-coffee origin-top animate-open-menu">
+      <nav>
+        <ul class="flex flex-col items-center gap-5 py-5 text-xl">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
-    </div>
+    </section>
   </header>
 
   <!-- Main Content -->
-  <main class="flex flex-col px-5 bg-gradient-to-b from-blew via-blew-darker to-blew md:px-10">
+  <main class="flex flex-col justify-between px-5 bg-gradient-to-l from-soil to-coffee md:px-10">
     <!-- Hero -->
-    <section id="hero" class="scroll-mt-40 section-min-height flex flex-col justify-evenly items-center gap-4 lg:flex-row-reverse lg:gap-10">
-      <div class="max-w-md">
+    <section id="hero" class="scroll-mt-40 section-min-height flex flex-col justify-evenly items-center gap-4 lg:flex-row-reverse lg:gap-10 animate-fade-in">
+      <div class="max-w-sm">
         <img
           src="./img/corporate-1x1.jpg"
           alt="my-avatar"
-          class="rounded-full shadow-xl"
+          class="rounded-xl shadow-xl"
         >
       </div>
-      <div class="flex flex-col items-center gap-4">
-        <h1 class="text-3xl font-semibold">Welcome!</h1>
-        <p class="text-lg text-justify">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Natus, neque. Optio sint magnam dicta ad saepe earum fugiat
-          tenetur, quaerat cumque deleniti aliquid soluta vel explicabo
-          consectetur doloribus laudantium qui!
+      <div class="flex flex-col gap-4">
+        <blockquote class="text-2xl font-semibold text-center">
+          <p class="lg:text-4xl lg:text-right before:content-['\201C'] after:content-['\201D']"> 
+            When times are getting tougher, and it pushes you to the edge, 
+            <span class="text-amber-400">always remember why you have started</span>. 
+          </p>
+        </blockquote>
+        <p class="text-lg lg:text-xl text-right">
+          &#8212; Carl James M. Reblora
         </p>
       </div>
     </section>
     <!-- About -->
-    <section id="about" class="scroll-mt-40 section-min-height">
+    <section id="about" class="scroll-mt-20 section-min-height">
       <h1>About</h1>
     </section>
     <!-- Portfolio -->
-    <section id="portfolio" class="scroll-mt-40 section-min-height">
+    <section id="portfolio" class="scroll-mt-20 section-min-height">
       <h1>Portfolio</h1>
     </section>
     <!-- Contact -->
-    <section id="contact" class="scroll-mt-40 section-min-height">
+    <section id="contact" class="scroll-mt-20 section-min-height">
       <h1>Contact</h1>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="flex flex-col gap-10 items-center py-2 px-5 bg-blew-darker text-slate-800">
+  <footer class="flex flex-col gap-10 items-center py-2 px-5 bg-soil-darker">
     <nav class="hidden gap-x-7">
       <a href="#about">About</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
     </nav>
     <section>
-      <p>Copyright &copy; 2022. All Rights Reserved.</p>
+      <p>Copyright &copy; <span id="year"></span>. All Rights Reserved.</p>
     </section>
   </footer>
 </body>
