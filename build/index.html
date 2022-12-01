@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carl James M. Reblora | Software Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="min-h-screen flex flex-col justify-between font-julius">
+  <!-- Header -->
+  <header class="flex justify-between items-center bg-blew sticky top-0 py-2 px-5 text-slate-800 text-2xl shadow-sm sm:text-lg md:px-10">
+    <!-- Logo -->
+    <div class="w-24">
+      <a href="#hero"><img src="./img/logo-200x200.png" alt="logo"></a>
+    </div>
+    <!-- Navbar -->
+    <div>
+      <button id="menu-btn" class="sm:hidden">☰</button>
+      <nav class="hidden sm:flex gap-x-8">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex flex-col px-5 bg-gradient-to-b from-blew via-blew-darker to-blew md:px-10">
+    <!-- Hero -->
+    <section id="hero" class="scroll-mt-40 section-min-height flex flex-col justify-evenly items-center gap-4 lg:flex-row-reverse lg:gap-10">
+      <div class="max-w-md">
+        <img
+          src="./img/corporate-1x1.jpg"
+          alt="my-avatar"
+          class="rounded-full shadow-xl"
+        >
+      </div>
+      <div class="flex flex-col items-center gap-4">
+        <h1 class="text-3xl font-semibold">Welcome!</h1>
+        <p class="text-lg text-justify">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Natus, neque. Optio sint magnam dicta ad saepe earum fugiat
+          tenetur, quaerat cumque deleniti aliquid soluta vel explicabo
+          consectetur doloribus laudantium qui!
+        </p>
+      </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="scroll-mt-40 section-min-height">
+      <h1>About</h1>
+    </section>
+    <!-- Portfolio -->
+    <section id="portfolio" class="scroll-mt-40 section-min-height">
+      <h1>Portfolio</h1>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="scroll-mt-40 section-min-height">
+      <h1>Contact</h1>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="flex flex-col gap-10 items-center py-2 px-5 bg-blew-darker text-slate-800">
+    <nav class="hidden gap-x-7">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <section>
+      <p>Copyright &copy; 2022. All Rights Reserved.</p>
+    </section>
+  </footer>
+</body>
+
+</html>
