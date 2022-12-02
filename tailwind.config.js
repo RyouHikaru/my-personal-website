@@ -18,6 +18,7 @@ module.exports = {
       keyframes: {
         'open-menu': {
           '0%': { transform: 'scaleY(0)' },
+          '80%': { transform: 'scaleY(1.1)' },
           '100%': { transform: 'scaleY(1)' },
         },
         'fade-in': {
@@ -26,8 +27,9 @@ module.exports = {
         }
       },
       animation: {
-        'open-menu': 'open-menu 0.2s ease-in-out forwards',
-        'fade-in': 'fade-in 1s ease-in-out forwards'
+        'open-menu': 'open-menu 0.3s ease-in-out forwards',
+        'fade-in-short': 'fade-in 0.35s ease-in-out',
+        'fade-in-long': 'fade-in 1s ease-in-out'
       },
     },
   },

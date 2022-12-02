@@ -8,8 +8,8 @@ const initApp = () => {
     const mobileMenuBtn = document.getElementById('menu-btn');
     const mobileMenuSection = document.getElementById('menu-mobile');
     const mobileMenu = document.getElementById('menu-mobile-list').getElementsByTagName('li');
-    const aboutMenuList = document.getElementById('about-menu-list');
-    const aboutMenu = mobileMenu[0];
+    const aboutMenu = document.getElementById('about-menu-list');
+    const aboutSubMenu = mobileMenu[0];
     const year = new Date().getFullYear();
     
     // Functions
@@ -17,14 +17,14 @@ const initApp = () => {
         mobileMenuSection.classList.toggle('hidden');
         mobileMenuBtn.innerHTML = mobileMenuSection.classList.contains('hidden') ? '☰' : '⨉';
 
-        if (!aboutMenuList.classList.contains('hidden')) {
+        if (!aboutMenu.classList.contains('hidden')) {
             toggleSubMenu();
         }
     }
 
     const toggleSubMenu = () => {
-        aboutMenuList.classList.toggle('hidden')
-        aboutMenu.firstElementChild.innerHTML = aboutMenuList.classList.contains('hidden') ? 'About &#9660;' : 'About &#9650;';
+        aboutMenu.classList.toggle('hidden')
+        aboutSubMenu.firstElementChild.innerHTML = aboutMenu.classList.contains('hidden') ? 'About &#9660;' : 'About &#9650;';
     }
 
     copyRightYear.innerHTML = year;
@@ -35,8 +35,8 @@ const initApp = () => {
         element.addEventListener('click', toggleMenu)
     })
 
-    aboutMenu.removeEventListener('click', toggleMenu);
-    aboutMenu.addEventListener('click', toggleSubMenu)
+    aboutSubMenu.removeEventListener('click', toggleMenu);
+    aboutSubMenu.addEventListener('click', toggleSubMenu)
 }
 
 

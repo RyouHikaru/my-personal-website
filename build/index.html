@@ -28,9 +28,9 @@
             <li class="group relative">
               <a class=" hover:text-amber-300" href="#about">About</a>
               <!-- About Submenu -->
-              <div class="group-hover:block p-4 bg-soil z-10 absolute hidden shadow-xl">
-                <a class="hover:text-amber-300 block" href="#about">Introduction</a>
-                <a class="hover:text-amber-300 block" href="#about-background">Background</a>
+              <div class="group-hover:block bg-coffee hidden absolute shadow-xl rounded-sm origin-top animate-fade-in-short">
+                <a class="hover:bg-soil hover:text-amber-300 px-4 py-2 block" href="#about">Introduction</a>
+                <a class="hover:bg-soil hover:text-amber-300 px-4 py-2 block" href="#about-background">Background</a>
               </div>
             </li>
             <li class="hover:text-amber-300"><a href="#career">Career</a></li>
@@ -44,10 +44,10 @@
     <!-- Menu (Mobile) -->
     <section id="menu-mobile" class="hidden bg-gradient-to-l from-soil to-coffee origin-top animate-open-menu">
       <nav>
-        <ul id="menu-mobile-list" class="flex flex-col items-end gap-5 py-5 text-xl">
+        <ul id="menu-mobile-list" class="flex flex-col items-end gap-7 py-5 text-2xl">
           <li class="text-right">
             <p>About &#9660;</p>
-            <ul id="about-menu-list" class="pt-4 flex flex-col justify-between gap-5 origin-top animate-open-menu">
+            <ul id="about-menu-list" class="pt-4 flex flex-col justify-between gap-7 origin-top animate-open-menu">
               <li><a href="#about">Introduction</a></li>
               <li><a href="#about-background">Background</a></li>
             </ul>
@@ -63,7 +63,7 @@
   <!-- Main Content -->
   <main class="flex flex-col justify-between px-5 md:px-10 lg:px-24 xl:px-40">
     <!-- Hero -->
-    <section id="hero" class="scroll-mt-40 section-min-height flex flex-col justify-center items-center gap-7 animate-fade-in lg:flex-row-reverse lg:gap-10">
+    <section id="hero" class="scroll-mt-40 section-min-height flex flex-col justify-center items-center gap-7 animate-fade-in-long lg:flex-row-reverse lg:gap-10">
       <div class="max-w-xl lg:min-w-[50%]">
         <img
           src="./img/scenery.jpg"
@@ -115,7 +115,7 @@
         </article>
 
         <!-- Background -->
-        <article id="about-background" class="flex flex-col items-center justify-center gap-16 section-min-height">
+        <article id="about-background" class="flex flex-col items-center justify-center gap-16 section-min-height scroll-mt-20">
           <h2 class="text-lg font-semibold lg:text-xl">Background</h2>
           <div class="max-w-3xl lg:min-w-[50%]">
             <img
