@@ -12,9 +12,6 @@ module.exports = {
           DEFAULT: '#7C5D4A'
         },
       },
-      screens: {
-        'nrw': { 'raw': '(max-aspect-ratio: 13/20)' }
-      },
       fontFamily: {
         'julius': ['Julius Sans One', 'sans-serif']
       },
@@ -29,7 +26,7 @@ module.exports = {
         }
       },
       animation: {
-        'open-menu': 'open-menu 0.4s ease-in-out forwards',
+        'open-menu': 'open-menu 0.2s ease-in-out forwards',
         'fade-in': 'fade-in 1s ease-in-out forwards'
       },
     },

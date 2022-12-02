@@ -3,20 +3,40 @@
 // }
 
 const initApp = () => {
+    // Declaration
     const copyRightYear = document.getElementById('year');
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('nav-menu');
-
+    const mobileMenuBtn = document.getElementById('menu-btn');
+    const mobileMenuSection = document.getElementById('menu-mobile');
+    const mobileMenu = document.getElementById('menu-mobile-list').getElementsByTagName('li');
+    const aboutMenuList = document.getElementById('about-menu-list');
+    const aboutMenu = mobileMenu[0];
     const year = new Date().getFullYear();
-    copyRightYear.innerHTML = year;
-
+    
+    // Functions
     const toggleMenu = () => {
-        mobileMenu.classList.toggle('hidden');
-        menuBtn.innerHTML = mobileMenu.classList.contains('hidden') ? '☰' : '⨉';
+        mobileMenuSection.classList.toggle('hidden');
+        mobileMenuBtn.innerHTML = mobileMenuSection.classList.contains('hidden') ? '☰' : '⨉';
+
+        if (!aboutMenuList.classList.contains('hidden')) {
+            toggleSubMenu();
+        }
     }
 
-    menuBtn.addEventListener('click', toggleMenu);
-    mobileMenu.addEventListener('click', toggleMenu);
+    const toggleSubMenu = () => {
+        aboutMenuList.classList.toggle('hidden')
+        aboutMenu.firstElementChild.innerHTML = aboutMenuList.classList.contains('hidden') ? 'About &#9660;' : 'About &#9650;';
+    }
+
+    copyRightYear.innerHTML = year;
+
+    mobileMenuBtn.addEventListener('click', toggleMenu);
+
+    Array.from(mobileMenu).forEach((element) => {
+        element.addEventListener('click', toggleMenu)
+    })
+
+    aboutMenu.removeEventListener('click', toggleMenu);
+    aboutMenu.addEventListener('click', toggleSubMenu)
 }
 
 
