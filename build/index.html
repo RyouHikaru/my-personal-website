@@ -24,10 +24,10 @@
       <div>
         <button id="menu-btn" class="hover:text-amber-300 sm:hidden" type="button">☰</button>
         <nav>
-          <ul class="hidden sm:flex gap-x-8">
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="hidden sm:flex gap-12">
+            <li class="hover:text-amber-300"><a href="#about">About</a></li>
+            <li class="hover:text-amber-300"><a href="#portfolio">Portfolio</a></li>
+            <li class="hover:text-amber-300"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -46,14 +46,14 @@
   </header>
 
   <!-- Main Content -->
-  <main class="flex flex-col justify-between px-5 bg-gradient-to-l from-soil to-coffee md:px-10">
+  <main class="flex flex-col justify-between pt-10 px-5 bg-gradient-to-l from-soil to-coffee lg:pt-0 md:px-10">
     <!-- Hero -->
-    <section id="hero" class="scroll-mt-40 section-min-height flex flex-col justify-evenly items-center gap-4 lg:flex-row-reverse lg:gap-10 animate-fade-in">
-      <div class="max-w-sm">
+    <section id="hero" class="scroll-mt-40 section-min-height flex flex-col items-center gap-7 lg:flex-row-reverse lg:gap-10 animate-fade-in">
+      <div class="max-w-xl lg:min-w-[50%]">
         <img
-          src="./img/corporate-1x1.jpg"
-          alt="my-avatar"
-          class="rounded-xl shadow-xl"
+          src="./img/scenery.jpg"
+          alt="scenery"
+          class="rounded-md shadow-xl"
         >
       </div>
       <div class="flex flex-col gap-4">
@@ -68,14 +68,69 @@
         </p>
       </div>
     </section>
+
+    <hr class="w-1/2 bg-black mx-auto my-10">
+
     <!-- About -->
-    <section id="about" class="scroll-mt-20 section-min-height">
-      <h1>About</h1>
+    <section id="about" class="scroll-mt-20 section-min-height flex flex-col items-center gap-16">
+      <h1 class="text-2xl font-bold">About</h1>
+      <!-- Greetings and Short Introduction -->
+      <article class="flex flex-col items-center gap-7">
+        <div class="max-w-sm">
+          <img
+          src="./img/eyeglass.png"
+          alt="eyeglass"
+          class="rounded-full shadow-xl"
+        >
+        </div>
+        <div class="flex flex-col justify-between items-center gap-4">
+          <p class="text-center">
+            Oh, hey! What's up?
+          </p>
+          <p class="text-center">
+            The name is<span class="text-amber-300 font-semibold"> Carl James Manuel Reblora</span>.
+            My friends and colleagues call me <span class="text-amber-300 font-semibold">CJ</span> 
+            and I'm a Software Engineer.
+          </p>
+          </p>
+          <p class="text-center">
+            I do code not because it's my job. I code 'cause I like it!
+          </p>
+        </div>
+      </article>
+
+      <!-- Residence -->
+      <article class="flex flex-col items-center gap-7">
+        <div class="max-w-xl lg:min-w-[50%]">
+          <img
+          src="./img/city.jpg"
+          alt="city"
+          class="rounded-md shadow-xl"
+        >
+        </div>
+        <div class="flex flex-col justify-between items-center gap-4">
+          <p class="text-center">
+            I was born in 2000, San Juan, Metro Manila. I don't have any memories 
+            from when I stayed there as I was still young at the time.
+          </p>
+          <p class="text-center">
+            I'm currently living in Manila City where I'm striving to get better 
+            at my job. I do have plans to move out of the country in the search for 
+            a greener pasteur.
+          </p>
+        </div>
+      </article>
     </section>
+
+    <hr class="w-1/2 bg-black mx-auto my-10">
+
     <!-- Portfolio -->
     <section id="portfolio" class="scroll-mt-20 section-min-height">
       <h1>Portfolio</h1>
     </section>
+
+    <hr class="w-1/2 bg-black mx-auto my-10">
+
     <!-- Contact -->
     <section id="contact" class="scroll-mt-20 section-min-height">
       <h1>Contact</h1>

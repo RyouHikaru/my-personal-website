@@ -31,7 +31,7 @@ module.exports = {
       animation: {
         'open-menu': 'open-menu 0.4s ease-in-out forwards',
         'fade-in': 'fade-in 1s ease-in-out forwards'
-      }
+      },
     },
   },
   plugins: [],

@@ -1,6 +1,6 @@
-window.onload = () => {
-    window.scroll(0, 0);
-}
+// window.onload = () => {
+//     window.scroll(0, 0);
+// }
 
 const initApp = () => {
     const copyRightYear = document.getElementById('year');
