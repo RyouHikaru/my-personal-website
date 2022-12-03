@@ -24,17 +24,17 @@
       <div>
         <button id="menu-btn" class="hover:text-amber-300 sm:hidden" type="button">☰</button>
         <nav>
-          <ul class="hidden sm:flex gap-12">
+          <ul class="hidden sm:flex gap-16">
             <li class="group relative">
               <a class=" hover:text-amber-300" href="#about">About</a>
               <!-- About Submenu -->
-              <div class="group-hover:block bg-coffee hidden absolute shadow-xl rounded-sm origin-top animate-fade-in-short">
+              <div class="group-hover:block divide-y divide-coffee-darker bg-coffee hidden absolute shadow-xl rounded-sm origin-top animate-fade-in-short">
                 <a class="hover:bg-soil hover:text-amber-300 px-4 py-2 block" href="#about">Introduction</a>
                 <a class="hover:bg-soil hover:text-amber-300 px-4 py-2 block" href="#about-background">Background</a>
+                <a class="hover:bg-soil hover:text-amber-300 px-4 py-2 block" href="#about-education">Education</a>
               </div>
             </li>
             <li class="hover:text-amber-300"><a href="#career">Career</a></li>
-            <li class="hover:text-amber-300"><a href="#portfolio">Portfolio</a></li>
             <li class="hover:text-amber-300"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -42,19 +42,19 @@
     </section>
     
     <!-- Menu (Mobile) -->
-    <section id="menu-mobile" class="hidden bg-gradient-to-l from-soil to-coffee origin-top animate-open-menu">
+    <section id="menu-mobile" class="hidden bg-gradient-to-l from-soil to-coffee origin-top animate-open-menu sm:hidden">
       <nav>
         <ul id="menu-mobile-list" class="flex flex-col items-end gap-7 py-5 text-2xl">
-          <li class="text-right">
-            <p>About &#9660;</p>
+          <li class="text-right hover:cursor-pointer">
+            <h3 class="hover:text-amber-300">About &#9660;</h3>
             <ul id="about-menu-list" class="pt-4 flex flex-col justify-between gap-7 origin-top animate-open-menu">
-              <li><a href="#about">Introduction</a></li>
-              <li><a href="#about-background">Background</a></li>
+              <li><a class="hover:text-amber-300" href="#about">Introduction</a></li>
+              <li><a class="hover:text-amber-300" href="#about-background">Background</a></li>
+              <li><a class="hover:text-amber-300" href="#about-education">Education</a></li>
             </ul>
           </li>
-          <li><a href="#career">Career</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="hover:text-amber-300"><a href="#career">Career</a></li>
+          <li class="hover:text-amber-300"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </section>
@@ -87,11 +87,11 @@
     <hr class="w-1/2 bg-black mx-auto my-10">
 
     <!-- About -->
-    <section id="about" class="scroll-mt-20 section-min-height flex flex-col items-center gap-7">
-      <h1 class="text-3xl font-bold xl:text-4xl">About</h1>
-      <section class="flex flex-col gap-4">
+    <section id="about" class="scroll-mt-20 section-min-height">
+      <section class="grid grid-flow-row grid-rows-4 items-stretch sm:gap-16">
         <!-- Greetings and Short Introduction -->
-        <article class="flex flex-col items-center justify-center gap-16 section-min-height">
+        <article class="flex flex-col items-center sm:justify-center gap-16">
+          <h1 class="text-3xl font-bold xl:text-4xl">About</h1>
           <div class="max-w-sm">
             <img
             src="./img/eyeglass.png"
@@ -99,23 +99,23 @@
             class="rounded-full shadow-xl"
           >
           </div>
-          <div class="max-w-3xl flex flex-col justify-between items-center gap-4">
-            <p class="text-center xl:text-lg">
-              Hi, I am<span class="text-amber-300 font-semibold whitespace-nowrap"> Carl James Manuel Reblora</span>,
+          <div class="max-w-3xl flex flex-col justify-between gap-4">
+            <p class="lg:text-justify xl:text-lg">
+              Hi, I am <span class="text-amber-300 font-semibold whitespace-nowrap">Carl James Manuel Reblora</span>,
               My friends and colleagues call me <span class="text-amber-300 font-semibold">CJ</span>.
             </p>
-            <p class="text-center xl:text-lg">
-              I'm currently working as a <span class="whitespace-nowrap">Software Engineer</span> and continously
+            <p class="lg:text-justify xl:text-lg">
+              I'm currently working as a <span class="whitespace-nowrap">Software Engineer</span> and consistently
               trying to learn and be updated in the modern technology.
               <br><br>
               I do a bunch of stuff like programming, gaming, and drawing. 
-              I listen to music a lot, if not all the time. I'm into Pop, Rock, EDM, Chill, and Lofi.
+              I listen to music a lot, if not all the time. I appreciate things, be it small or big.
             </p>
           </div>
         </article>
 
         <!-- Background -->
-        <article id="about-background" class="flex flex-col items-center justify-center gap-16 section-min-height scroll-mt-20">
+        <article id="about-background" class="flex flex-col items-center justify-center gap-16 scroll-mt-10 md:scroll-mt-24">
           <h2 class="text-lg font-semibold lg:text-xl">Background</h2>
           <div class="max-w-3xl lg:min-w-[50%]">
             <img
@@ -124,19 +124,58 @@
             class="rounded-md shadow-xl"
           >
           </div>
-          <div class="flex flex-col justify-between items-center gap-4 xl:flex-row xl:max-w-3xl xl:gap-8">
-            <p class="text-justify xl:text-lg">
-              I was born in January 13, 2000 at San Juan City, Metro Manila. 
-              I lived at different places in the Philippines my whole life, and I think 
-              that greatly influenced my personality.
+          <div class="flex flex-col justify-between items-center gap-4 lg:grid lg:grid-flow-col lg:grid-cols-2 lg:items-stretch lg:max-w-3xl lg:gap-8">
+            <p class="lg:text-justify xl:text-lg">
+              Born in the Gen Z era at Metro Manila, Philippines, young me have experienced both 
+              the traditional way and the dawn of digitalization.
             </p>
-            <p class="text-justify xl:text-lg">
-              I'm currently residing in Manila City where I'm striving to get better 
-              at my job. I do have plans to move out of the country in search for 
-              a greener pasteur.
+            <p class="lg:text-justify xl:text-lg">
+              I lived at different places my whole life, be it an urban or rural area. 
+              Adapted to different cultures and environment, that I guess, what makes me unique.
+          </div>
+        </article>
+
+        <!-- Education -->
+        <article id="about-education" class="row-span-2 lg:row-span-1 flex flex-col items-center justify-center gap-16 -scroll-mt-20 sm:scroll-mt-20 md:scroll-mt-24 lg:scroll-mt-12">
+          <h2 class="text-lg font-semibold lg:text-xl">Education</h2>
+          <div class="grid lg:grid-flow-col gap-7">
+            <!-- LNHS -->
+            <article class="rounded-md max-w-md sm:animate-grow-out sm:hover:animate-grow-in sm:bg-coffee-darker sm:p-5 sm:shadow-xl">
+              <img
+                src="./img/lnhs.jpg"
+                alt="school"
+                class="rounded-md shadow-xl"
+              >
+              <p class="pt-5 lg:text-justify xl:text-lg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque dolores ab maxime quidem ipsa. Voluptate consectetur nemo ducimus dolore facere enim sapiente illum, repellat odit perspiciatis officia, quos tempore consequatur.
+              </p>
+            </article>
+            <!-- FEU HS -->
+            <article class="rounded-md max-w-md sm:animate-grow-out sm:hover:animate-grow-in sm:bg-coffee sm:p-5 sm:shadow-xl lg:flex lg:flex-col-reverse lg:justify-between lg:items-end">
+              <img
+                src="./img/feu.jpg"
+                alt="school"
+                class="rounded-md shadow-xl"
+              >
+              <p class="pt-5 lg:text-justify xl:text-lg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque dolores ab maxime quidem ipsa. Voluptate consectetur nemo ducimus dolore facere enim sapiente illum, repellat odit perspiciatis officia, quos tempore consequatur.
+              </p>
+            </article>
+            <!-- FEU Tech -->
+            <article class="rounded-md max-w-md sm:animate-grow-out sm:hover:animate-grow-in sm:bg-coffee-lighter sm:p-5 sm:shadow-xl">
+              <img
+                src="./img/feu-tech.jpg"
+                alt="school"
+                class="rounded-md shadow-xl"
+              >
+              <p class="pt-5 lg:text-justify xl:text-lg">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque dolores ab maxime quidem ipsa. Voluptate consectetur nemo ducimus dolore facere enim sapiente illum, repellat odit perspiciatis officia, quos tempore consequatur.
+              </p>
+            </article>
             </p>
           </div>
         </article>
+
       </section>
     </section>
 
@@ -145,13 +184,6 @@
     <!-- Career -->
     <section id="career" class="scroll-mt-20 section-min-height">
       <h1>Career</h1>
-    </section>
-
-    <hr class="w-1/2 bg-black mx-auto my-10">
-
-    <!-- Portfolio -->
-    <section id="portfolio" class="scroll-mt-20 section-min-height">
-      <h1>Portfolio</h1>
     </section>
 
     <hr class="w-1/2 bg-black mx-auto my-10">
@@ -167,7 +199,6 @@
     <nav class="hidden gap-x-7">
       <a href="#about">About</a>
       <a href="#career">Career</a>
-      <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
     </nav>
     <section>
