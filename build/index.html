@@ -84,11 +84,11 @@
       </div>
     </section>
 
-    <hr class="w-1/2 bg-black mx-auto my-10">
+    <hr class="w-1/2 bg-amber-50 mx-auto my-10">
 
     <!-- About -->
     <section id="about" class="scroll-mt-20 section-min-height">
-      <section class="grid grid-flow-row grid-rows-4 items-stretch sm:gap-16">
+      <div class="grid grid-flow-row grid-rows-4 items-stretch sm:gap-16 lg:grid-rows-3">
         <!-- Greetings and Short Introduction -->
         <article class="flex flex-col items-center sm:justify-center gap-16">
           <h1 class="text-3xl font-bold xl:text-4xl">About</h1>
@@ -136,9 +136,9 @@
         </article>
 
         <!-- Education -->
-        <article id="about-education" class="row-span-2 lg:row-span-1 flex flex-col items-center justify-center gap-16 -scroll-mt-20 sm:scroll-mt-20 md:scroll-mt-24 lg:scroll-mt-12">
+        <article id="about-education" class="row-span-2 lg:row-span-1 flex flex-col items-center justify-center gap-16 sm:scroll-mt-20 md:scroll-mt-24 lg:scroll-mt-12">
           <h2 class="text-lg font-semibold lg:text-xl">Education</h2>
-          <div class="grid lg:grid-flow-col gap-7">
+          <div class="grid gap-9 lg:grid-flow-col">
             <!-- LNHS -->
             <article class="rounded-md max-w-md sm:animate-grow-out sm:hover:animate-grow-in sm:bg-coffee-darker sm:p-5 sm:shadow-xl">
               <img
@@ -172,25 +172,48 @@
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque dolores ab maxime quidem ipsa. Voluptate consectetur nemo ducimus dolore facere enim sapiente illum, repellat odit perspiciatis officia, quos tempore consequatur.
               </p>
             </article>
-            </p>
           </div>
         </article>
 
-      </section>
+      </div>
     </section>
 
-    <hr class="w-1/2 bg-black mx-auto my-10">
+    <hr class="w-1/2 bg-amber-50 mx-auto my-10">
 
     <!-- Career -->
-    <section id="career" class="scroll-mt-20 section-min-height">
-      <h1>Career</h1>
+    <section id="career" class="scroll-mt-20 section-min-height mx-auto">
+      <div class="grid grid-flow-row gap-7 lg:max-w-3xl">
+        <h1 class="text-center text-3xl font-bold xl:text-4xl">Career</h1>
+        <article>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque tempore incidunt excepturi velit corporis eaque. Non explicabo nulla voluptatibus vero error! Soluta, dolore!</p>
+        </article>
+        <article>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque tempore incidunt excepturi velit corporis eaque. Non explicabo nulla voluptatibus vero error! Soluta, dolore!</p>
+        </article>
+        <article>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque tempore incidunt excepturi velit corporis eaque. Non explicabo nulla voluptatibus vero error! Soluta, dolore!</p>
+        </article>
+      </div>
     </section>
 
-    <hr class="w-1/2 bg-black mx-auto my-10">
+    <hr class="w-1/2 bg-amber-50 mx-auto my-10">
 
     <!-- Contact -->
     <section id="contact" class="scroll-mt-20 section-min-height">
-      <h1>Contact</h1>
+      <div class="grid grid-flow-row gap-7 lg:max-w-3xl">
+        <h1 class="text-3xl font-bold xl:text-4xl">Contact</h1>
+        <form class="flex flex-col justify-start items-start">
+          <label for="name">Name</label>
+          <br>
+          <input class="text-soil-darker" type="text" placeholder="Your name">
+          <br>
+          <label for="email">Email</label>
+          <br>
+          <input class="text-soil-darker" type="text" placeholder="Your email">
+          <br>
+          <textarea class="text-soil-darker" placeholder="Leave me a message" cols="40" rows="10" name="comment"></textarea>
+        </form>
+      </div>
     </section>
   </main>
 
