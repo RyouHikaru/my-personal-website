@@ -29,9 +29,9 @@
               <a class=" hover:text-amber-300" href="#about">About</a>
               <!-- About Submenu -->
               <div class="group-hover:block divide-y divide-coffee-darker bg-coffee hidden absolute shadow-xl rounded-sm origin-top animate-fade-in-short">
-                <a class="hover:bg-soil hover:text-amber-300 px-4 py-2 block" href="#about">Introduction</a>
+                <a class="hover:bg-soil hover:text-amber-300 px-4 py-2 block rounded-t-sm" href="#about">Introduction</a>
                 <a class="hover:bg-soil hover:text-amber-300 px-4 py-2 block" href="#about-background">Background</a>
-                <a class="hover:bg-soil hover:text-amber-300 px-4 py-2 block" href="#about-education">Education</a>
+                <a class="hover:bg-soil hover:text-amber-300 px-4 py-2 block rounded-b-sm" href="#about-education">Education</a>
               </div>
             </li>
             <li class="hover:text-amber-300"><a href="#career">Career</a></li>
@@ -61,7 +61,7 @@
   </header>
 
   <!-- Main Content -->
-  <main class="flex flex-col justify-between px-5 md:px-10 lg:px-24 xl:px-40">
+  <main class="flex flex-col justify-between pb-5 px-5 md:px-10 lg:px-24 xl:px-40">
     <!-- Hero -->
     <section id="hero" class="scroll-mt-40 section-min-height flex flex-col justify-center items-center gap-7 animate-fade-in-long lg:flex-row-reverse lg:gap-10">
       <div class="max-w-xl lg:min-w-[50%]">
@@ -87,8 +87,8 @@
     <hr class="w-1/2 bg-amber-50 mx-auto my-10">
 
     <!-- About -->
-    <section id="about" class="scroll-mt-20 section-min-height">
-      <div class="grid grid-flow-row grid-rows-4 items-stretch sm:gap-16 lg:grid-rows-3">
+    <section id="about" class="scroll-mt-20">
+      <div class="grid grid-flow-row grid-rows-3 items-stretch sm:gap-16">
         <!-- Greetings and Short Introduction -->
         <article class="flex flex-col items-center sm:justify-center gap-16">
           <h1 class="text-3xl font-bold xl:text-4xl">About</h1>
@@ -100,7 +100,7 @@
           >
           </div>
           <div class="max-w-3xl flex flex-col justify-between gap-4">
-            <p class="lg:text-justify xl:text-lg">
+            <p class="lg:text-center xl:text-lg">
               Hi, I am <span class="text-amber-300 font-semibold whitespace-nowrap">Carl James Manuel Reblora</span>,
               My friends and colleagues call me <span class="text-amber-300 font-semibold">CJ</span>.
             </p>
@@ -115,16 +115,16 @@
         </article>
 
         <!-- Background -->
-        <article id="about-background" class="flex flex-col items-center justify-center gap-16 scroll-mt-10 md:scroll-mt-24">
+        <article id="about-background" class="flex flex-col items-center justify-center gap-16 -scroll-mt-5 sm:scroll-mt-24">
           <h2 class="text-lg font-semibold lg:text-xl">Background</h2>
-          <div class="max-w-3xl lg:min-w-[50%]">
+          <div class="max-w-4xl lg:min-w-[50%]">
             <img
             src="./img/city.jpg"
             alt="city"
             class="rounded-md shadow-xl"
           >
           </div>
-          <div class="flex flex-col justify-between items-center gap-4 lg:grid lg:grid-flow-col lg:grid-cols-2 lg:items-stretch lg:max-w-3xl lg:gap-8">
+          <div class="flex flex-col justify-between items-center gap-4 lg:grid lg:grid-flow-col lg:grid-cols-2 lg:items-stretch lg:max-w-4xl lg:gap-8">
             <p class="lg:text-justify xl:text-lg">
               Born in the Gen Z era at Metro Manila, Philippines, young me have experienced both 
               the traditional way and the dawn of digitalization.
@@ -136,45 +136,37 @@
         </article>
 
         <!-- Education -->
-        <article id="about-education" class="row-span-2 lg:row-span-1 flex flex-col items-center justify-center gap-16 sm:scroll-mt-20 md:scroll-mt-24 lg:scroll-mt-12">
+        <article id="about-education" class="flex flex-col items-center justify-center flex-wrap gap-16 scroll-mt-5 sm:scroll-mt-20 md:scroll-mt-24 xl:scroll-mt-0">
           <h2 class="text-lg font-semibold lg:text-xl">Education</h2>
-          <div class="grid gap-9 lg:grid-flow-col">
-            <!-- LNHS -->
-            <article class="rounded-md max-w-md sm:animate-grow-out sm:hover:animate-grow-in sm:bg-coffee-darker sm:p-5 sm:shadow-xl">
-              <img
-                src="./img/lnhs.jpg"
-                alt="school"
-                class="rounded-md shadow-xl"
-              >
-              <p class="pt-5 lg:text-justify xl:text-lg">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque dolores ab maxime quidem ipsa. Voluptate consectetur nemo ducimus dolore facere enim sapiente illum, repellat odit perspiciatis officia, quos tempore consequatur.
-              </p>
-            </article>
-            <!-- FEU HS -->
-            <article class="rounded-md max-w-md sm:animate-grow-out sm:hover:animate-grow-in sm:bg-coffee sm:p-5 sm:shadow-xl lg:flex lg:flex-col-reverse lg:justify-between lg:items-end">
-              <img
-                src="./img/feu.jpg"
-                alt="school"
-                class="rounded-md shadow-xl"
-              >
-              <p class="pt-5 lg:text-justify xl:text-lg">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque dolores ab maxime quidem ipsa. Voluptate consectetur nemo ducimus dolore facere enim sapiente illum, repellat odit perspiciatis officia, quos tempore consequatur.
-              </p>
-            </article>
-            <!-- FEU Tech -->
-            <article class="rounded-md max-w-md sm:animate-grow-out sm:hover:animate-grow-in sm:bg-coffee-lighter sm:p-5 sm:shadow-xl">
-              <img
-                src="./img/feu-tech.jpg"
-                alt="school"
-                class="rounded-md shadow-xl"
-              >
-              <p class="pt-5 lg:text-justify xl:text-lg">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque dolores ab maxime quidem ipsa. Voluptate consectetur nemo ducimus dolore facere enim sapiente illum, repellat odit perspiciatis officia, quos tempore consequatur.
-              </p>
-            </article>
+          <article class="sm:hidden rounded-md max-w-lg">
+            <img
+              src="./img/feu-tech.jpg"
+              alt="school"
+              class="rounded-md shadow-xl"
+            >
+            <p class="pt-14">
+              I graduated Bachelor of Science in Computer Science with specialization
+              in Software Engineering from Far Eastern University - Institute of Technology.<br><br> 
+              This where I learned a lot of things, be it academical, social, and emotional aspect.
+              They taught me how to be patient. That all things are not supposed to be easy, but with consistency, 
+              the desired outcome may come to fruition.
+            </p>
+          </article>
+
+          <!-- For sm and above -->
+          <div class="hidden sm:block rounded-md shadow-xl bg-[url('../img/feu-tech.jpg')] w-full h-[70vh] bg-no-repeat bg-cover bg-center">
+            <div class="group flex items-center rounded-md text-transparent w-full h-full hover:bg-dark hover:text-amber-50 hover:animate-blur">
+              <span class="text-justify group-hover:bg-soil-darker group-hover:bg-opacity-80 group-hover:animate-fade-in-short font-semibold p-10">
+                I graduated Bachelor of Science in 
+                <span class="text-transparent font-semibold whitespace-nowrap group-hover:text-amber-300 ">Computer Science</span> 
+                with specialization in Software Engineering from Far Eastern University - Institute of Technology. 
+                This where I learned a lot of things, be it academical, social, and emotional aspect.
+                They taught me how to be patient. That all things are not supposed to be easy, but with consistency, 
+                the desired outcome may come to fruition.
+              </span>
+            </div>
           </div>
         </article>
-
       </div>
     </section>
 
@@ -182,16 +174,48 @@
 
     <!-- Career -->
     <section id="career" class="scroll-mt-20 section-min-height mx-auto">
-      <div class="grid grid-flow-row gap-7 lg:max-w-3xl">
+      <div class="grid grid-flow-row gap-7 lg:max-w-4xl">
         <h1 class="text-center text-3xl font-bold xl:text-4xl">Career</h1>
-        <article>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque tempore incidunt excepturi velit corporis eaque. Non explicabo nulla voluptatibus vero error! Soluta, dolore!</p>
+        <!-- Early career -->
+        <article class="flex flex-col items-center md:items-start md:flex-row gap-7 border-2 border-white border-dashed">
+          <div class="max-w-md">
+            <img
+              src="./img/creative-portrait.jpg"
+              alt="creative attire"
+              class="rounded-md shadow-xl"
+            >
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque 
+            tempore incidunt excepturi velit corporis eaque. Non explicabo nulla 
+            voluptatibus vero error! Soluta, dolore! <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque 
+            tempore incidunt excepturi velit corporis eaque. Non explicabo nulla 
+            voluptatibus vero error! Soluta, dolore!
+          </p>
         </article>
-        <article>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque tempore incidunt excepturi velit corporis eaque. Non explicabo nulla voluptatibus vero error! Soluta, dolore!</p>
-        </article>
-        <article>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque tempore incidunt excepturi velit corporis eaque. Non explicabo nulla voluptatibus vero error! Soluta, dolore!</p>
+
+        <!-- Mid career -->
+        <article class="flex flex-col items-center md:items-start md:flex-row-reverse gap-7 border-2 border-white border-dashed">
+          <div class="max-w-md">
+            <img
+              src="./img/corporate-portrait.jpg"
+              alt="corporate attire"
+              class="rounded-md shadow-xl"
+            >
+          </div>
+          <p class="md:text-right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque 
+            tempore incidunt excepturi velit corporis eaque. Non explicabo nulla 
+            voluptatibus vero error! Soluta, dolore! <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque 
+            tempore incidunt excepturi velit corporis eaque. Non explicabo nulla 
+            voluptatibus vero error! Soluta, dolore!
+          </p>
         </article>
       </div>
     </section>
@@ -199,21 +223,81 @@
     <hr class="w-1/2 bg-amber-50 mx-auto my-10">
 
     <!-- Contact -->
-    <section id="contact" class="scroll-mt-20 section-min-height">
-      <div class="grid grid-flow-row gap-7 lg:max-w-3xl">
-        <h1 class="text-3xl font-bold xl:text-4xl">Contact</h1>
-        <form class="flex flex-col justify-start items-start">
-          <label for="name">Name</label>
-          <br>
-          <input class="text-soil-darker" type="text" placeholder="Your name">
-          <br>
-          <label for="email">Email</label>
-          <br>
-          <input class="text-soil-darker" type="text" placeholder="Your email">
-          <br>
-          <textarea class="text-soil-darker" placeholder="Leave me a message" cols="40" rows="10" name="comment"></textarea>
+    <section id="contact" class="scroll-mt-20 section-min-height mx-auto">
+      <h1 class="text-center text-3xl font-bold xl:text-4xl mb-7">Contact</h1>
+      <article class="flex flex-col md:min-w-[600px] lg:flex-row lg:max-w-4xl">
+        <div class="my-auto">
+          <img
+            src="./img/location-small.png"
+            alt="creative attire"
+            class="rounded-t-md shadow-xl w-full lg:hidden"
+          >
+          <img
+            src="./img/location.png"
+            alt="creative attire"
+            class="rounded-l-md shadow-xl hidden lg:block"
+          >
+        </div>
+        <form class="bg-soil-darker rounded-b-md shadow-xl p-5 lg:rounded-b-none lg:rounded-r-md">
+          <div class="flex flex-col">
+            <label class="font-semibold text-xl" for="name">Name</label>
+            <br>
+            <input class="text-soil-darker p-2 rounded-md" type="text" placeholder="Your name">
+            <br>
+            <label class="font-semibold text-xl" for="email">Email</label>
+            <br>
+            <input class="text-soil-darker p-2 rounded-md" type="text" placeholder="Your email">
+            <br>
+            <textarea class="text-soil-darker p-2 rounded-md resize-none" rows="10" placeholder="Leave me a message" name="comment"></textarea>
+            <br>
+          </div>
+          <div class="px-5 pb-5 flex flex-col justify-center md:justify-start md:items-center">
+            <button type="button" class="rounded-full border-4 font-semibold border-white border-solid p-3 md:w-96 hover:border-amber-300 hover:text-amber-300">Send</button>
+          </div>
         </form>
-      </div>
+      </article>
+      <!-- <div class="grid grid-flow-row items-stretch gap-7 md:flex md:justify-center md:items-center lg:items-start lg:max-w-4xl">
+        Map for md below
+        <div class="mx-auto md:hidden">
+          <img
+            src="./img/location-small.png"
+            alt="creative attire"
+            class="rounded-md shadow-xl"
+          >
+        </div>
+        
+        Map for md and above
+        <div class="max-w-sm hidden md:block"">
+          <img
+            src="./img/location.png"
+            alt="creative attire"
+            class="rounded-md shadow-xl"
+          >
+        </div>
+
+        Contact form
+        <div class="flex flex-col gap-7">
+          <h1 class="text-3xl font-bold xl:text-4xl">Contact</h1>
+          <form class="bg-soil-darker rounded-md shadow-xl">
+            <div class="flex flex-col justify-start items-stretch p-5">
+              <label for="name">Name</label>
+              <br>
+              <input class="text-soil-darker p-2 rounded-md" type="text" placeholder="Your name">
+              <br>
+              <label for="email">Email</label>
+              <br>
+              <input class="text-soil-darker p-2 rounded-md" type="text" placeholder="Your email">
+              <br>
+              <textarea class="text-soil-darker p-2 rounded-md resize-none" rows="10" placeholder="Leave me a message" name="comment"></textarea>
+              <br>
+            </div>
+            <div class="px-5 pb-5 flex flex-col justify-center md:justify-start md:items-center">
+              <button type="button" class="rounded-full border-4 border-white border-solid p-3 md:w-96 hover:border-amber-300 hover:text-amber-300">Send</button>
+            </div>
+          </form>
+        </div>
+
+      </div> -->
     </section>
   </main>
 
