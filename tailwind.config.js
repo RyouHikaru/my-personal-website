@@ -35,13 +35,18 @@ module.exports = {
           '0%': { transform: 'scale(1.15)' },
           '100%': { transform: 'scale(1)' },
         },
+        'blur': {
+          '0%': { backdropFilter: 'blur(0)' },
+          '100%': { backdropFilter: 'blur(8px)' },
+        }
       },
       animation: {
         'open-menu': 'open-menu 0.3s ease-in-out forwards',
         'fade-in-short': 'fade-in 0.35s ease-in-out',
         'fade-in-long': 'fade-in 1s ease-in-out',
         'grow-in': 'grow-in 0.2s ease-in forwards',
-        'grow-out': 'grow-out 0.2s ease-in forwards'
+        'grow-out': 'grow-out 0.2s ease-in forwards',
+        'blur': 'blur 0.35s ease-out forwards'
       },
     },
   },
