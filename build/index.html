@@ -115,23 +115,32 @@
         </article>
 
         <!-- Background -->
-        <article id="about-background" class="flex flex-col items-center justify-center gap-16 -scroll-mt-5 sm:scroll-mt-24">
+        <article id="about-background" class="flex flex-col items-center justify-center flex-wrap gap-16 scroll-mt-5 sm:scroll-mt-20 md:scroll-mt-24 xl:scroll-mt-0">
           <h2 class="text-lg font-semibold lg:text-xl">Background</h2>
-          <div class="max-w-4xl lg:min-w-[50%]">
+          <article class="sm:hidden rounded-md max-w-lg">
             <img
-            src="./img/city.jpg"
-            alt="city"
-            class="rounded-md shadow-xl"
-          >
-          </div>
-          <div class="flex flex-col justify-between items-center gap-4 lg:grid lg:grid-flow-col lg:grid-cols-2 lg:items-stretch lg:max-w-4xl lg:gap-8">
-            <p class="lg:text-justify xl:text-lg">
+              src="./img/city.jpg"
+              alt="school"
+              class="rounded-md shadow-xl"
+            >
+            <p class="pt-14">
               Born in the Gen Z era at Metro Manila, Philippines, young me have experienced both 
-              the traditional way and the dawn of digitalization.
-            </p>
-            <p class="lg:text-justify xl:text-lg">
+              the traditional way and the dawn of digitalization.<br><br> 
               I lived at different places my whole life, be it an urban or rural area. 
               Adapted to different cultures and environment, that I guess, what makes me unique.
+            </p>
+          </article>
+
+          <!-- For sm and above -->
+          <div class="hidden sm:block rounded-md shadow-xl bg-[url('../img/city.jpg')] w-full h-[70vh] bg-no-repeat bg-cover bg-center">
+            <div class="group flex items-center rounded-md text-transparent w-full h-full hover:bg-dark hover:text-amber-50 hover:animate-blur">
+              <span class="text-justify group-hover:bg-soil-darker group-hover:bg-opacity-80 group-hover:animate-fade-in-short font-semibold p-10">
+                Born in the Gen Z era at Metro Manila, Philippines, young me have experienced both 
+                the traditional way and the dawn of digitalization.
+                I lived at different places my whole life, be it an urban or rural area. 
+                Adapted to different cultures and environment, that I guess, what makes me unique.
+              </span>
+            </div>
           </div>
         </article>
 
@@ -174,47 +183,56 @@
 
     <!-- Career -->
     <section id="career" class="scroll-mt-20 section-min-height mx-auto">
-      <div class="grid grid-flow-row gap-7 lg:max-w-4xl">
+      <div class="grid grid-flow-row gap-16 lg:max-w-4xl">
         <h1 class="text-center text-3xl font-bold xl:text-4xl">Career</h1>
         <!-- Early career -->
-        <article class="flex flex-col items-center md:items-start md:flex-row gap-7 border-2 border-white border-dashed">
-          <div class="max-w-md">
+        <article class="flex flex-col items-center xl:items-center xl:flex-row gap-7 bg-gradient-to-br from-soil to-soil-darker p-5 rounded-md shadow-xl">
+          <div class="max-w-sm xl:min-w-[24rem]">
             <img
               src="./img/creative-portrait.jpg"
               alt="creative attire"
-              class="rounded-md shadow-xl"
+              class="rounded-md"
             >
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque 
-            tempore incidunt excepturi velit corporis eaque. Non explicabo nulla 
-            voluptatibus vero error! Soluta, dolore! <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque 
-            tempore incidunt excepturi velit corporis eaque. Non explicabo nulla 
-            voluptatibus vero error! Soluta, dolore!
+            I started as an intern at iWave Inc. in Makati City. Initially,
+            I was assigned to do Qualtiy Assurance tasks such as limit or stress testing,
+            and was made to study Spring Boot and other web development technologies
+            by my project lead. <br><br>
+            I've done this on a span of 2 and a half month before my team has
+            started on the development of the system. The goal of this project is to
+            upgrade an existing system into a newer and much efficient system. <br><br>
+            From there on, my colleagues treated me as an equal, so made me do not only menial tasks,
+            but crucial ones that I think made an impact in the project development. <br><br>
+            I stayed there over the course of 2 internship periods (that's 6-7 months)
+            and I think it's thanks to it that I have a good head start in my career journey.
           </p>
         </article>
 
         <!-- Mid career -->
-        <article class="flex flex-col items-center md:items-start md:flex-row-reverse gap-7 border-2 border-white border-dashed">
-          <div class="max-w-md">
+        <article class="flex flex-col items-center xl:items-center xl:flex-row-reverse gap-7 bg-gradient-to-br from-soil to-soil-darker p-5 rounded-md shadow-xl">
+          <div class="max-w-sm xl:min-w-[24rem]">
             <img
               src="./img/corporate-portrait.jpg"
               alt="corporate attire"
-              class="rounded-md shadow-xl"
+              class="rounded-md"
             >
           </div>
-          <p class="md:text-right">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque 
-            tempore incidunt excepturi velit corporis eaque. Non explicabo nulla 
-            voluptatibus vero error! Soluta, dolore! <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Assumenda, possimus! Molestiae perspiciatis eligendi ex quo neque 
-            tempore incidunt excepturi velit corporis eaque. Non explicabo nulla 
-            voluptatibus vero error! Soluta, dolore!
+          <p class="xl:text-right">
+            It was December 2022 when I officially finished my internship. 
+            From that time, I started to look and apply for entry-level jobs.
+            With me are the wisdom, skill, and discipline manifested by working on a 
+            real industry project during my internship, as well as my personal language
+            studies (Japanese), I was hired by IBM Philippines.<br><br>
+            It really took me quite a time to get used to the working environment of
+            this company. The schedule is tough (shifting) but along the way
+            is the joy of learning something new. I made used of my
+            development skills acquired during internship (and by pursuing it further by 
+            studying more about tech stacks) to contribute in the development of complex
+            systems for Japanese clients. <br><br>
+            Indeed it was a journey, but I do think that it's just the beginning. I'm looking
+            forward to grow in the succeeding years, and hopefully be able to achieve my ultimate
+            dream!
           </p>
         </article>
       </div>
@@ -225,8 +243,8 @@
     <!-- Contact -->
     <section id="contact" class="scroll-mt-20 section-min-height mx-auto">
       <h1 class="text-center text-3xl font-bold xl:text-4xl mb-7">Contact</h1>
-      <article class="flex flex-col md:min-w-[600px] lg:flex-row lg:max-w-4xl">
-        <div class="my-auto">
+      <div class="mx-auto">
+        <div class="lg:flex">
           <img
             src="./img/location-small.png"
             alt="creative attire"
@@ -235,69 +253,27 @@
           <img
             src="./img/location.png"
             alt="creative attire"
-            class="rounded-l-md shadow-xl hidden lg:block"
+            class="rounded-l-md shadow-xl max-w-xs hidden lg:block"
           >
-        </div>
-        <form class="bg-soil-darker rounded-b-md shadow-xl p-5 lg:rounded-b-none lg:rounded-r-md">
-          <div class="flex flex-col">
-            <label class="font-semibold text-xl" for="name">Name</label>
-            <br>
-            <input class="text-soil-darker p-2 rounded-md" type="text" placeholder="Your name">
-            <br>
-            <label class="font-semibold text-xl" for="email">Email</label>
-            <br>
-            <input class="text-soil-darker p-2 rounded-md" type="text" placeholder="Your email">
-            <br>
-            <textarea class="text-soil-darker p-2 rounded-md resize-none" rows="10" placeholder="Leave me a message" name="comment"></textarea>
-            <br>
-          </div>
-          <div class="px-5 pb-5 flex flex-col justify-center md:justify-start md:items-center">
-            <button type="button" class="rounded-full border-4 font-semibold border-white border-solid p-3 md:w-96 hover:border-amber-300 hover:text-amber-300">Send</button>
-          </div>
-        </form>
-      </article>
-      <!-- <div class="grid grid-flow-row items-stretch gap-7 md:flex md:justify-center md:items-center lg:items-start lg:max-w-4xl">
-        Map for md below
-        <div class="mx-auto md:hidden">
-          <img
-            src="./img/location-small.png"
-            alt="creative attire"
-            class="rounded-md shadow-xl"
-          >
-        </div>
-        
-        Map for md and above
-        <div class="max-w-sm hidden md:block"">
-          <img
-            src="./img/location.png"
-            alt="creative attire"
-            class="rounded-md shadow-xl"
-          >
-        </div>
-
-        Contact form
-        <div class="flex flex-col gap-7">
-          <h1 class="text-3xl font-bold xl:text-4xl">Contact</h1>
-          <form class="bg-soil-darker rounded-md shadow-xl">
-            <div class="flex flex-col justify-start items-stretch p-5">
-              <label for="name">Name</label>
+          <form class="bg-gradient-to-br from-soil to-soil-darker rounded-b-md shadow-xl p-5 lg:rounded-b-none lg:rounded-r-md">
+            <div class="flex flex-col max-h-[27rem]">
+              <label class="font-semibold text-xl" for="name">Name</label>
               <br>
-              <input class="text-soil-darker p-2 rounded-md" type="text" placeholder="Your name">
+              <input class="text-soil-darker p-2 border-white focus:drop-shadow-2xl focus:outline-none border-4 focus:border-amber-300 focus:border-solid rounded-md" type="text" placeholder="Your name">
               <br>
-              <label for="email">Email</label>
+              <label class="font-semibold text-xl" for="email">Email</label>
               <br>
-              <input class="text-soil-darker p-2 rounded-md" type="text" placeholder="Your email">
+              <input class="text-soil-darker p-2 border-white focus:drop-shadow-2xl focus:outline-none border-4 focus:border-amber-300 focus:border-solid focus:shadow-xl rounded-md" type="text" placeholder="Your email">
               <br>
-              <textarea class="text-soil-darker p-2 rounded-md resize-none" rows="10" placeholder="Leave me a message" name="comment"></textarea>
+              <textarea class="text-soil-darker p-2 border-white focus:drop-shadow-2xl focus:outline-none border-4 focus:border-amber-300 focus:border-solid focus:shadow-xl rounded-md resize-none" rows="10" placeholder="Leave me a message" name="comment"></textarea>
               <br>
             </div>
             <div class="px-5 pb-5 flex flex-col justify-center md:justify-start md:items-center">
-              <button type="button" class="rounded-full border-4 border-white border-solid p-3 md:w-96 hover:border-amber-300 hover:text-amber-300">Send</button>
+              <button type="button" class="rounded-full border-4 font-semibold border-white border-solid p-3 md:w-96 hover:border-amber-300 hover:text-amber-300">Send</button>
             </div>
           </form>
         </div>
-
-      </div> -->
+      </div>
     </section>
   </main>
 
